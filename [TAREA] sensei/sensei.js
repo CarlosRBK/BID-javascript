@@ -12,7 +12,7 @@ class Ninja {
         console.log(this.nombre+", Fuerza: "+this.fuerza+", Velocidad: "+this.velocidad+", Salud: "+ this.salud);
     }
     drinkSake(){
-        return "Lo que un programador puede hacer en un mes, dos programadores pueden hacerlo en dos meses."
+        this.salud+=10;
     }
 }
 
@@ -23,8 +23,8 @@ class Sensei extends Ninja {
     };
 
     speakWisdom() {
-        const message = super.drinkSake();
-        console.log(message);
+        super.drinkSake();
+        console.log("Lo que un programador puede hacer en un mes, dos programadores pueden hacerlo en dos meses.");
     }
 };
 // ejemplo de salida
